@@ -15,6 +15,10 @@ var objPeople = [
 
 var confirm = document.getElementById("confirm")
 
+function clear() {
+	confirm.innerHTML = " "
+}
+
 // login functionality
 function login() {
 	// retrieve data input from form
