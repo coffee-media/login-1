@@ -1,14 +1,14 @@
 var objPeople = [
 	{
-		username: "Adisa",
+		username: "adisa",
 		password: "whatitdew22"
 	},
 	{
-		username: "William",
+		username: "william",
 		password: "icarusjr420"
 	},
 	{
-		username: "Erika",
+		username: "erika",
 		password: "weepystudent23"
 	}
 ]
@@ -21,7 +21,7 @@ function login() {
 
 	// loop through user objects and confirm if username & password correct
 	for(i = 0; i < objPeople.length; i++) {
-		if(username == objPeople[i].username && password == objPeople[i].password) {
+		if(username.toLowerCase() == objPeople[i].username && password == objPeople[i].password) {
 			console.log(username + " is logged in!")
 			return
 		}
