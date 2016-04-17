@@ -13,6 +13,8 @@ var objPeople = [
 	}
 ]
 
+var confirm = document.getElementById("confirm")
+
 // login functionality
 function login() {
 	// retrieve data input from form
