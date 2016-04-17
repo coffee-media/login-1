@@ -24,12 +24,12 @@ function login() {
 	// loop through user objects and confirm if username & password correct
 	for(i = 0; i < objPeople.length; i++) {
 		if(username.toLowerCase() == objPeople[i].username && password == objPeople[i].password) {
-			console.log(username + " is logged in!")
+			confirm.innerHTML = username + " is logged in!"
 			return
 		}
 	}
 	// error message if user and password don't match
-	console.log("incorrect username or password")
+	confirm.innerHTML = "incorrect username or password"
 }
 
 function registerUser() {
