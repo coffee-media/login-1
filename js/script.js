@@ -29,11 +29,13 @@ function login() {
 	for(i = 0; i < objPeople.length; i++) {
 		if(username.toLowerCase() == objPeople[i].username && password == objPeople[i].password) {
 			confirm.innerHTML = username + " is logged in!"
+			setTimeout(clear, 2000)
 			return
 		}
 	}
 	// error message if user and password don't match
 	confirm.innerHTML = "incorrect username or password"
+	setTimeout(clear, 2000)
 }
 
 function registerUser() {
